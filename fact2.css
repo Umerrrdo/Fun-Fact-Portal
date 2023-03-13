@@ -1,0 +1,31 @@
+.flamingo {
+    font-size: 10rem;
+    animation: fade-in 4s infinite;
+}
+
+.second {
+    animation-delay: 4s;
+
+}
+
+.img-container {
+    position: relative;
+    bottom: 11rem;
+    left: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+
+    100% {
+        opacity: 1;
+        display: block;
+    }
+}

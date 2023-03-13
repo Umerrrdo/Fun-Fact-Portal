@@ -1,0 +1,77 @@
+.french-flag {
+  height: 10rem;
+  width: 7rem;
+  transform: rotate(270deg);
+  position: relative;
+  left: 34rem;
+  bottom: 8rem;
+  animation: fade-out 3s infinite ease-in-out;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.stripe {
+  height: 33.33%;
+  position: absolute;
+  width: 100%;
+}
+
+.blue {
+  background-color: #0055A4;
+  top: 0;
+  z-index: 1;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.white {
+  background-color: #FFFFFF;
+  top: 33.33%;
+  z-index: 2;
+
+}
+
+.red {
+  background-color: #EF4135;
+  top: 66.66%;
+  z-index: 3;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+/* BELGIUM FLAG */
+
+.belgian-flag {
+  animation: fade-in 3s infinite ease-in-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+.black {
+  background-color: black;
+}
+
+.yellow {
+  background-color: #FDDA24;
+}
+
+.maroon {
+  background-color: #EF3340;
+}
