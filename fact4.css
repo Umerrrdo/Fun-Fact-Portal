@@ -1,0 +1,41 @@
+#elephant {
+    position: relative;
+    left: 26rem;
+    bottom: 12rem;
+    /* Animation for Elephant making sound */
+    animation: elephant 1s steps(1) infinite;
+}
+
+.sound-wave {
+    position: relative;
+    bottom: 23rem;
+    left: 38.5rem;
+    width: 50px;
+    height: 75px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    /* transform: rotate(90deg); */
+    transform-origin: bottom left;
+    border: 2px solid #9fbf88;
+    opacity: 0.8;
+}
+
+.sound-wave::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    bottom: 2px;
+    width: 0;
+    background-color: black;
+    animation: fillParenthesis 2s infinite linear forwards;
+    border-top-right-radius: 48px;
+    border-bottom-right-radius: 48px;
+}
+
+@keyframes fillParenthesis {
+    to {
+        width: 46px;
+        opacity: 0.6;
+    }
+}

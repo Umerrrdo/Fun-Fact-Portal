@@ -1,0 +1,103 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.koala {
+    position: relative;
+    bottom: 10rem;
+    left: 25rem
+}
+
+.fur {
+    fill: #c0c0c0;
+    stroke: none;
+}
+
+.dark-fur {
+    fill: #a0a0a0;
+    stroke: none;
+}
+
+.eye {
+    fill: #ffffff;
+    stroke: none;
+}
+
+.pupil {
+    fill: #101010;
+    stroke: none;
+    animation: look 5s 0s infinite;
+}
+
+.nose {
+    fill: #1c1d22;
+    stroke: none;
+}
+
+.blink-upper {
+    d: path('M 0,50 A 25,25,0,0,1,100,50 A 25,25,0,0,0,0,50');
+    animation: blink-upper 5s 0s infinite;
+}
+
+.blink-lower {
+    d: path('M 0,50 A 25,25,0,0,0,100,50 A 25,25,0,0,1,0,50');
+    animation: blink-lower 5s 0s infinite;
+}
+
+@keyframes look {
+    0% {
+        transform: translateX(0);
+    }
+
+    10% {
+        transform: translateX(-10px);
+    }
+
+    20% {
+        transform: translateX(-10px);
+    }
+
+    30% {
+        transform: translateX(10px);
+    }
+
+    40% {
+        transform: translateX(10px);
+    }
+
+    50% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes blink-upper {
+
+    70% {
+        d: path('M 0,50 A 25,25,0,0,1,100,50 A 25,25,0,0,0,0,50');
+    }
+
+    75% {
+        d: path('M 0,50 A 25,25,0,0,1,100,50 A 25,0,0,0,0,0,50');
+    }
+
+    80% {
+        d: path('M 0,50 A 25,25,0,0,1,100,50 A 25,25,0,0,0,0,50');
+    }
+}
+
+@keyframes blink-lower {
+
+    70% {
+        d: path('M 0,50 A 25,25,0,0,0,100,50 A 25,25,0,0,1,0,50');
+    }
+
+    75% {
+        d: path('M 0,50 A 25,25,0,0,0,100,50 A 25,0,0,0,1,0,50');
+    }
+
+    80% {
+        d: path('M 0,50 A 25,25,0,0,0,100,50 A 25,25,0,0,1,0,50');
+    }
+}

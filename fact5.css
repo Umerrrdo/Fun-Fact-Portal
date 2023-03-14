@@ -1,0 +1,21 @@
+.sneez {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+    bottom: 9rem;
+    left: 28rem;
+}
+
+#sneez-image {
+    animation: sneez 3s ease-out;
+}
+
+@keyframes sneez {
+    0% {
+        scale: 2;
+    }
+
+    100% {
+        scale: 1;
+    }
+}
