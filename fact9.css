@@ -1,0 +1,47 @@
+.emoji {
+    display: inline-block;
+    font-size: 10rem;
+    margin: 0 .05em 0 .1em;
+    vertical-align: -0.1em;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: relative;
+    bottom: 11rem;
+    left: 31rem;
+}
+
+.semi-wow {
+    animation: fade-out 4s infinite;
+}
+
+.wow {
+    position: relative;
+    bottom: 11rem;
+    left: 15.5rem;
+    animation: fade-in 4s infinite;
+    animation-delay: 4s;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+        display: inline-block;
+    }
+
+    100% {
+        opacity: 1;
+        display: none;
+    }
+}
+
+@keyframes fade-out {
+    0% {
+        opacity: 1;
+        display: none;
+    }
+
+    100% {
+        opacity: 0;
+        display: inline-block;
+    }
+}
