@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz time!!</title>
+    <link rel="stylesheet" href="temp.css" />
+    <!-- <link rel="stylesheet" href="fact2.css" /> -->
+  </head>
+  <style>
+    #fact-container {
+      position: relative;
+      left: 19.6rem;
+    }
+
+    .previous {
+      position: relative;
+      right: 7rem;
+      /* top: 0rem; */
+      bottom: 1rem;
+    }
+
+    .next {
+      position: relative;
+      left: 62rem;
+      bottom: 1rem;
+    }
+
+    .fun-fact-text {
+      top: 0;
+      margin-right: 4rem;
+      text-align: center;
+    }
+
+    .btn {
+      height: 3rem;
+      width: 8rem;
+      border-radius: 5rem;
+      background-color: #3f8b47;
+      color: white;
+      font-size: 1rem;
+      border: 3px solid #003b1b;
+      font-weight: 600;
+      position: relative;
+      left: 52%;
+      transform: translateX(-50%);
+      /* bottom: 4rem; */
+      cursor: pointer;
+    }
+    .option-container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .next-question {
+      top: 2rem;
+    }
+  </style>
+  <body>
+    <div class="fun-text">
+      <span class="low-high">Q</span>
+      <span class="high">U</span>
+      <span class="highest">I </span>
+      <span class="highest">Z</span>
+      <span class="highest">T</span>
+      <span class="highest">I</span>
+      <span class="high">M</span>
+      <span class="low-high">E</span>
+    </div>
+    <div id="fact-container">
+      <h1 class="fact-title">Are You Ready ?</h1>
+      <p class="fun-fact-text">
+        You are about to take a quiz of all the facts that you've learned so far
+        in this website. You will be given 5 questions. <br />
+        If you answer them right, then you'll pass this website. <br />
+        Good luck!
+      </p>
+    </div>
+    <button onclick="quiz()" class="btn" id="btn" style="bottom: 4rem">
+      Start The Quiz
+    </button>
+    <a href="fact12.html" class="button previous" id="prev">Previous</a>
+    <a href="#" class="button next" id="next">Next</a>
+    <script src="question.js"></script>
+  </body>
+</html>
