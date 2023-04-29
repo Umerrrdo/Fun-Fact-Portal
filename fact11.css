@@ -1,0 +1,24 @@
+.hum-bird {
+    position: relative;
+    transform: scaleX(-1);
+    left: 40rem;
+    bottom: 2rem;
+    animation: backward 3s infinite ease-in-out;
+}
+
+@keyframes backward {
+    0% {
+        left: 40rem;
+        opacity: 1;
+    }
+
+    50% {
+        left: 20rem;
+        opacity: 0;
+    }
+
+    100% {
+        left: 40rem;
+        opacity: 1;
+    }
+}

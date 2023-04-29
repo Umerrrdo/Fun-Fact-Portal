@@ -1,0 +1,30 @@
+.hum-bird {
+    position: relative;
+    transform: scaleX(-1);
+    left: 28rem;
+    bottom: 9rem;
+}
+
+.heart {
+    color: red;
+    font-size: 10rem;
+    display: inline-block;
+    position: relative;
+    left: 25rem;
+    bottom: 9rem;
+    animation: heart .5s infinite ease-in-out;
+}
+
+@keyframes heart {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.2);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
